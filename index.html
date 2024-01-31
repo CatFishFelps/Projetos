@@ -3,19 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Meu Site de Notícias</title>
+    <link rel="stylesheet" href="./main.css" /> <!--Link para anexar o documento CSS aqui no HTML-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">   
 </head>
 <body>
-    <header>
-        <h1>Games Shop</h1>
-        <nav>
-            <ul>
-                <li>
-                    
+    <!--Começo do cabeçalho da página-->
+
+    <header> <!--é utilizada para definir a seção de cabeçalho (ou cabeça) de um documento ou de uma seção específica dentro de um documento.-->
+        <div class="container"> <!--Criação de um Container-->
+            <h1>Games Shop</h1>
+        <nav> <!-- é usada para definir uma seção de navegação em um documento, é utilizada para identificar blocos de conteúdo que contêm links para outras páginas ou seções do mesmo documento. -->
+            <ul> <!-- é usada para criar uma lista não ordenada-->
+                <li> <!-- é usada para criar elementos de lista. "li" representa "list item" -->
+                    <a href="#">Sobre a Loja</a> <!--<a href> é usado para referenciar algo, um link, imagem, etc-->
+                </li>
+                <li> 
+                    <a href="#">Contato</a>
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
+
+    <!--Fim do cabeçalho da Página-->
+
+    <!-- Começo da seção da página-->
+    <section>
+        <div class="container">
+            <img class="store-front" src="./images/loja.jpg" alt="Fachada da Loja Games Shop" /> <!--Comando para colocar uma imagem na página, alt serve para descrição-->
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque earum aperiam odit delectus quo, quibusdam praesentium velit ab, quaerat mollitia eligendi voluptatum laborum recusandae aliquam fugit dolorum. Ab, amet quisquam!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae distinctio ipsam quam deserunt. Quo quidem ea perspiciatis dignissimos quis corporis animi rerum odit libero sit! Voluptates aliquam magnam aliquid.
+                </p>
+                <ul class="brands-list">
+                    <li> <img src="images/nintendo.png" alt="Nintendo" /></li>
+                    <li> <img src="images/xbox.png" alt="Xbox" /></li>
+                    <li> <img src="images/playstation.png" alt="playstation" /></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+        </div>
+        <div class="contact-methods">
+            <h3>Fale Conosco</h3>
+            <form>
+                <input type="text" placeholder="Seu Nome" />
+                <input type="email" placeholder="Seu E-mail" />
+                <input type="tel" placeholder="Seu Telefone (Opcional)" />
+                <textarea placeholder="Sua Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div>
+            <h3>Nos Acompanhe</h3>
+            <ul class="social-links">
+                <li>
+                    <a href="#" title="Siga-nos no instagram">
+                        <img src="./images/instagram.png" alt="Logo do Instagram" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Siga-nos no Facebook">
+                        <img src="./images/facebook.png" alt="Logo do Facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Visite nosso Canal no Youtube">
+                        <img src="./images/youtube.png" alt="Logo do Youtube" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Venha Até Nós</h3>
+            <p>
+                Rua JavaScript n.124, Vila HTML - São Paulo - SP
+            </p>
+        </div>
+    </section>
 </body>
 </html>
