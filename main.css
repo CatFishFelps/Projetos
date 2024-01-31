@@ -1,0 +1,107 @@
+* {
+    margin: 0; /* Refere-se a margem */
+    padding: 0; /* Padding se refere a espaçamento interno */
+    box-sizing: border-box; /* Refere-se a o tamanho da 'caixa' */
+}
+
+header {
+    padding: 16px 0px;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+header,
+section h2 {
+    font-family: 'Bungee', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header h1,
+section h2 {
+    font-weight: normal;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1280px ; /*largura máxima do container/página*/
+    width: 100%; /* largura*/
+    margin: 0 auto;
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182C61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+}
