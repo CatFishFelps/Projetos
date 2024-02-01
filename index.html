@@ -19,10 +19,10 @@
         <nav> <!-- é usada para definir uma seção de navegação em um documento, é utilizada para identificar blocos de conteúdo que contêm links para outras páginas ou seções do mesmo documento. -->
             <ul> <!-- é usada para criar uma lista não ordenada-->
                 <li> <!-- é usada para criar elementos de lista. "li" representa "list item" -->
-                    <a href="#">Sobre a Loja</a> <!--<a href> é usado para referenciar algo, um link, imagem, etc-->
+                    <a href="#about">Sobre a Loja</a> <!--<a href> é usado para referenciar algo, um link, imagem, etc-->
                 </li>
                 <li> 
-                    <a href="#">Contato</a>
+                    <a href="#contact">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -32,7 +32,7 @@
     <!--Fim do cabeçalho da Página-->
 
     <!-- Começo da seção da página-->
-    <section>
+    <section id="about">
         <div class="container">
             <img class="store-front" src="./images/loja.jpg" alt="Fachada da Loja Games Shop" /> <!--Comando para colocar uma imagem na página, alt serve para descrição-->
             <div>
@@ -50,47 +50,56 @@
                 </ul>
             </div>
         </div>
-        </section>
-            <section id="contact">
-                <div class="container">
-                    <h2>Contato</h2>
+            </section>
+                <section id="contact">
+            <div class="container">
+                        <h2>Contato</h2>
                 <div class="contact-methods">
-                    <h3>Fale Conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu Nome" />
-                        <input type="email" placeholder="Seu E-mail" />
-                        <input type="tel" placeholder="Seu Telefone (Opcional)" />
-                        <textarea placeholder="Sua Mensagem"></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                <div>
-                    <h3>Nos Acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no instagram">
-                                <img src="./images/instagram.png" alt="Logo do Instagram" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="./images/facebook.png" alt="Logo do Facebook" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso Canal no Youtube">
-                                <img src="./images/youtube.png" alt="Logo do Youtube" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha Até Nós</h3>
-                    <p>
-                        Rua JavaScript n.124, Vila HTML - São Paulo - SP
-                    </p>
+                    <div>
+                        <form>
+                        <h3>Fale Conosco</h3>
+                            <input type="text" placeholder="Seu Nome" required />
+                            <input type="email" placeholder="Seu E-mail" required />
+                            <input type="tel" placeholder="Seu Telefone (Opcional)" />
+                            <textarea placeholder="Sua Mensagem" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>Nos Acompanhe</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#" title="Siga-nos no instagram">
+                                    <img src="./images/instagram.png" alt="Logo do Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga-nos no Facebook">
+                                    <img src="./images/facebook.png" alt="Logo do Facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Visite nosso Canal no Youtube">
+                                    <img src="./images/youtube.png" alt="Logo do Youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        <div>
+                            <h3>Venha Até Nós</h3>
+                            <p>
+                                Rua JavaScript n.124, Vila HTML - São Paulo - SP
+                            </p>
+                        </div>
                 </div>
             </div>
-        </div>
-        </section>
+            </section>
+            <footer>
+                <div class="container">
+                    <p>
+                        &copy; Games Shop - Todos os Direitos Reservados - 2024
+                    </p>
+                </div>
+            </footer>
     </body>
     </html>
